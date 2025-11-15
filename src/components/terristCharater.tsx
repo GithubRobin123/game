@@ -29,6 +29,8 @@ export default function Character3D({ position, direction, isMoving }: Character
     }
   }, [isMoving, actions]);
 
+  
+
   useFrame(() => {
     if (modelRef.current) {
       modelRef.current.position.copy(position);
